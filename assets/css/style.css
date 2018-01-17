@@ -129,6 +129,10 @@ h3,
   border-bottom: 2px solid #eee;
 }
 
+.sidebar a {
+	text-decoration: none;
+}
+
 .social {
   width: 62px;
   height: 62px;
@@ -237,3 +241,177 @@ input[type=submit] {
   background: #4aaaa5;
   border: 0 none;
 }
+
+/* Set breakpoints at 980px, 768px, and 640px screen widths */
+
+@media only screen and (min-width: 980px) {
+  .container {
+    background-color: red;
+    max-width: 940px;
+/*    margin-left: 20px;
+    margin-right: 20px;*/
+  }
+
+.auth-image {
+	float: none;
+	width: 100%;
+}
+
+	body { 
+		margin: 0 auto; 
+	}
+}
+
+@media only screen and (max-width: 979px) and (min-width: 768px) {
+  .container {
+    background-color: orange;
+    max-width: 728px;
+/*    margin-left: 20px;
+    margin-right: 20px;*/
+  }
+
+	body { 
+		margin: 0 auto; 
+  }
+
+  .sidebar {
+  	max-width: 100%;
+    float: left;
+  }
+
+  .main-section {
+  	max-width: 100%
+  }
+
+	.auth-image {
+		width: 50%;
+	}
+
+}
+
+@media only screen and (max-width: 767px) and (min-width: 640px) {
+  .container {
+    background-color: yellow;
+    max-width: 610px;
+/*    margin-left: 20px;
+    margin-right: 20px;*/
+  }
+
+	body { 
+		margin: 0 auto; 
+  }
+
+  .sidebar {
+  	max-width: 100%;
+    float: left;
+  }
+
+  .main-section {
+  	max-width: 100%
+  }  
+
+  .auth-image {
+		width: 50%;
+	}
+}
+
+@media only screen and (max-width: 639px) {
+  .container {
+    background-color: green;
+    max-width: 609px;
+/*    margin-left: 20px;
+    margin-right: 20px;*/
+  }
+
+	body { 
+		margin: 0 auto; 
+  }
+
+  .sidebar {
+  	max-width: 100%;
+    float: left;
+  }
+
+  .main-section {
+  	max-width: 100%
+  } 
+
+  #logo {
+/*  float: left;*/
+  width: 100%;
+  height: 50px;
+  font-size: 28px;
+	line-height: 50px;
+	}
+
+
+/* look at this and the images, and the rest of the html pages */
+	.nav {
+		float: none;
+		width: 100%;
+		text-align: center;
+	}
+
+	h1 {
+		font-size: 24px;
+		padding-bottom: 0px;
+	}
+
+	h2,
+	h3 {
+		font-size: 20px;
+	}
+
+	body {
+		font-size: 16px;
+		line-height: 30px;
+	}
+
+	.main-section,
+	.sidebar {
+		padding: 20px;
+	}
+
+}
+
+
+/*@media only screen and (min-width: 980px) {
+  .container {
+    max-width: 940px;
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 979px) {
+  .container {
+    max-width: 600px;
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+
+  #main-container {
+    width: 100%;
+  }
+  .sidebar {
+    max-width: 100%;
+    float: left;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .container {
+    max-width: 600px;
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+
+  #main-container {
+    width: 100%;
+  }
+  .sidebar {
+    max-width: 100%;
+    float: left;
+  }
+}*/
+
